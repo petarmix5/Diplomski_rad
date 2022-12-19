@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+.row{
+  justify-content:center;
+}
 h1, p{
   color:#fff;
   text-align: justify;

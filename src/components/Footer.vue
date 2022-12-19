@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-    <footer id="footer" class="row">
+    <footer id="footer" class="row mt-auto ">
     <div class="footerlogo col-lg-4 col-xs-12">
                 <img :src="footerLogo" alt="footerlogo" >
                 </div>
@@ -42,11 +42,9 @@ footer.row{
     background: #013a51;
     display:flex;
     align-items: baseline;
-    padding:20px 0 20px 0;
-    position:absolute;
+    padding:25px 0 25px 0;
     width:100%;
-    height:auto;
-
+    position:absolute;
 }
 .copyright{
     text-align: center;

@@ -7,8 +7,8 @@
     :SecondParagraph="SecondParagraph"
     :ThirdParagraph="ThirdParagraph" 
     :source = "source"></Header>
-    <Footer></Footer>
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
@@ -45,5 +45,7 @@ export default {
     background-size: cover;
     top: 0;
     max-width: 100%;
+    height:100%;
 }
+
 </style>

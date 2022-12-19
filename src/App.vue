@@ -20,6 +20,7 @@ export default{
     const user = getAuth().currentUser
     onMounted(() => {
 
+      
       const auth = getAuth()
           onAuthStateChanged(auth, (user) => {
               if(user){
@@ -50,7 +51,7 @@ export default{
 .main{
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     
 }
 </style>

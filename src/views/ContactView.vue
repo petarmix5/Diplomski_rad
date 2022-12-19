@@ -47,6 +47,8 @@ export default {
     background-size: cover;
     top: 0;
     overflow: hidden;
+    max-width: 100%;
+    height:100%;
 }
 .contact h1, p{
   color:#fff;

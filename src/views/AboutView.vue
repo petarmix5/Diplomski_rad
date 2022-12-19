@@ -5,8 +5,8 @@
   :SecondParagraph="SecondParagraph"
   :ThirdParagraph="ThirdParagraph"
   :source="source"/>
-  <Footer/>
-</div>
+</div> 
+<Footer/>
 </template>
 
 <script>
@@ -41,6 +41,7 @@ export default {
     background-size: cover;
     top: 0;
     max-width: 100%;
+    height:fit-content;
 }
 
 

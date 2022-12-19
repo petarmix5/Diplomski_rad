@@ -103,22 +103,20 @@ const routes = [
   
 
 ]
-
+//router instance
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 })
 
-
+//provjera prilikom svake promjene rute
 router.beforeEach((to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
   const currentUser = getAuth().currentUser
 
   if(requiresAuth && !currentUser){
     next('/login')
-  } else if (requiresAuth && currentUser){
-    next()
-  } else{
+  }  else{
     next()
   }
 

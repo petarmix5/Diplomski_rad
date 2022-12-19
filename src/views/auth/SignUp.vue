@@ -83,6 +83,7 @@ import router from '@/router'
     background-size: cover;
     top: 0;
     max-width: 100%;
+    height:100vh;
 }
 .form-check-label {
   padding: 0 10px;
