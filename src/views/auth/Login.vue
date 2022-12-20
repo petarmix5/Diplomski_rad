@@ -43,7 +43,6 @@
   </template>
   
   <script>
-import {firebase} from "firebase/app"
 import {browserSessionPersistence, getAuth, setPersistence, signInWithEmailAndPassword} from "firebase/auth"
 import NavBar from '@/components/NavBar.vue'
 import { ref } from 'vue'
@@ -63,9 +62,8 @@ import router from '@/router'
           const auth = getAuth()
           setPersistence(auth, browserSessionPersistence)
           .then(() => {
-            signInWithEmailAndPassword(auth, email.value, password.value)
-            router.replace({name:'data'})
-          })
+            return signInWithEmailAndPassword(auth, email.value, password.value)
+          }, router.replace({name:'data'}))
             .catch(error => {
               switch(error.code) {
                 case 'auth/invalid-email':
@@ -82,6 +80,7 @@ import router from '@/router'
                   break
                 
               }
+              
             })
         }
 
